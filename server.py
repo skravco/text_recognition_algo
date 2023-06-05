@@ -36,7 +36,7 @@ class Bot:
         self.response(kw.stock_tickers[1], ['tesla', 'ticker', 'symbol'], single_response=True)
         self.response(kw.stock_tickers[2], ['netflix', 'ticker', 'symbol'], single_response=True)
 
-                # Tickers library
+        # Tickers library
         self.response(kw.crypto_tickers[0], ['bitcoin', 'ticker', 'symbol'], single_response=True)
         self.response(kw.crypto_tickers[1], ['etherium', 'ticker', 'symbol'], single_response=True)
         self.response(kw.crypto_tickers[2], ['litecoin', 'ticker', 'symbol'], single_response=True)
@@ -61,5 +61,5 @@ bot = Bot()
 
 # Testing the response system
 while True:
-    user_input = input("You: ")
-    print('Machine: ' + bot.get_response(user_input))
+    user_input = input("YOU: ")
+    print(' MACHINE: ' + bot.get_response(user_input))
